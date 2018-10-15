@@ -3,7 +3,7 @@ class CreatePatients < ActiveRecord::Migration
     create_table :patients do |t|
       t.string :name
       t.string :age
-      t.timestamps :false
+      t.timestamps null: false
     end
   end
 end
