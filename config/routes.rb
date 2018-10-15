@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'patients_controller/index'
+
+  get 'patients_controller/show'
+
   resources :doctors
   resources :patients
   resources :appointments, only: [:show]
