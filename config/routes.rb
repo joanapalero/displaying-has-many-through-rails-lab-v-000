@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'appointments/new'
+
+  get 'appointments/index'
+
+  get 'appointments/show'
+
   get 'patients/new'
 
   get 'patients/index'
